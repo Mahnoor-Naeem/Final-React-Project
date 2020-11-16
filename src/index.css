@@ -1,13 +1,97 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Mulish', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg_nav{
+  background-color: #141a20 !important;
+}
+
+.logo{
+  font-size: 1.9rem !important;
+  font-weight: bolder !important;
+  color: #ffffff !important;
+  letter-spacing: 10px;
+}
+.logo .dot{
+  letter-spacing: 2px !important;
+  color: rgb(214, 151, 68);
+}
+
+.navbar li a{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #575757 !important;
+}
+
+.menu_active{
+  color: #ffffff !important;
+  font-weight: bold;
+  border-bottom:1px solid #ffffff !important;
+}
+
+.navbar li a:hover{
+  color: rgb(214, 151, 68) !important;
+}
+
+@media (max-width:991px){
+  .logo{
+    font-size: 1.3rem !important;
+  }
+  .menu_active{
+    border-bottom:none !important;
+  }
+
+}
+
+/* 
+Home Page CSS
+======================================================================================== */
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 40px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #141a20;
+}
+
+#header .brand_name{
+  color: rgb(214, 151, 68);
+}
+
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: rgb(214, 151, 68);
+  border: 2px solid rgb(214, 151, 68);
+}
+
+#header .btn-get-started:hover{
+  background-color: rgb(214, 151, 68);
+  color: #ffffff;
+}
+
+.header-img{
+  text-align: left;
+}
+
+.image{
+  width: 100%;
+  height: 50vh;
 }
